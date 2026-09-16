@@ -71,13 +71,20 @@ SQL Server (LocalDB or full instance)
 All requests can then be made through the gateway at https://localhost:7186.
 
 **Project Structure**
-**DairyFlow/
-├── DairyFlow.ApiGateway/       # Ocelot API Gateway
-├── DairyFlow/                  # Auth Service
-├── DairyFlow.FarmerService/    # Farmer management
-├── DairyFlow.CollectionService/# Milk collection & rate calculation
-├── DairyFlow.RateService/      # Milk rate slabs & Excel export
-└── DairyFlow.BuildingBlocks/   # Shared middleware, models, exceptions**
+
+**DairyFlow/**
+
+**├── DairyFlow.ApiGateway/       # Ocelot API Gateway**
+
+**├── DairyFlow/                  # Auth Service**
+
+**├── DairyFlow.FarmerService/    # Farmer management**
+
+**├── DairyFlow.CollectionService/# Milk collection & rate calculation**
+
+**├── DairyFlow.RateService/      # Milk rate slabs & Excel export**
+
+**└── DairyFlow.BuildingBlocks/   # Shared middleware, models, exceptions**
 
 
 **Author
