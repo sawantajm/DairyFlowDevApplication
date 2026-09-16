@@ -10,7 +10,8 @@ Farmer Service	Farmer onboarding, profile & address management, dashboard summar
 Collection Service	Milk collection entries, rate calculation, daily/summary reports, dashboard
 Rate Service	Milk rate slabs (fat/SNF based), rate matrix, Excel rate-chart export
 API Gateway	Single entry point routing requests to downstream services (Ocelot)
-Architecture
+
+**Architecture**
 **<img width="1408" height="768" alt="Arch digram" src="https://github.com/user-attachments/assets/540bcc85-bb95-44f5-b4d0-ca680b211e59" />**
 
 
@@ -36,12 +37,12 @@ Reporting: ClosedXML (Excel export)
 Database: SQL Server
 API Docs: Swagger / Swashbuckle
 Services & Ports
-Service	Route Prefix	Port
-API Gateway	—	7186
-Auth Service	/api/v1/Auth	7142
-Farmer Service	/api/v1/farmers	7221
-Collection Service	/api/v1/milk-collections	7280
-Rate Service	/api/V1/milk-rates	7192
+Service	Route Prefix	
+API Gateway
+Auth Service	/api/v1/Auth	
+Farmer Service	/api/v1/farmers	
+Collection Service	/api/v1/milk-collections	
+Rate Service	/api/V1/milk-rates	
 
 
 **Key Features**
