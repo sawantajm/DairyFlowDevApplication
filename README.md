@@ -1,5 +1,5 @@
-<img width="1408" height="768" alt="Gemini_Generated_Image_31w0ts31w0ts31w0" src="https://github.com/user-attachments/assets/79724e0a-8260-46b7-a6e6-2fa5a2e4f006" />**DairyFlow**
-A .NET 8 microservices platform for dairy milk procurement — built to model a real-world dairy collection workflow from farmer onboarding through milk collection, rate calculation, and reporting.
+**DairyFlow**
+**A .NET 8 microservices platform for dairy milk procurement — built to model a real-world dairy collection workflow from farmer onboarding through milk collection, rate calculation, and reporting.**
 
 **Overview**
 DairyFlow is composed of four independently deployable services sitting behind an API Gateway, each following clean architecture with its own database, migrations, and bounded context.
@@ -17,7 +17,7 @@ Architecture
 
 **Each service:**
 
-Follows Clean Architecture — Domain / Application / Infrastructure layers
+Followed Clean Architecture — Domain / Application / Infrastructure layers
 Owns its own SQL Server database with EF Core code-first migrations
 Uses the repository pattern for data access
 Validates requests with FluentValidation
@@ -45,7 +45,7 @@ Rate Service	/api/V1/milk-rates	7192
 
 
 **Key Features**
-User registration/login with JWT issuance and forgot/reset-password flow
+**User registration/login with JWT issuance and forgot/reset-password flow
 Farmer CRUD with address management and dashboard summary
 Milk collection entry with automatic rate calculation (fat/SNF based)
 Milk rate slab management with a rate matrix and Excel export
@@ -55,18 +55,18 @@ Getting Started
 Prerequisites
 .NET 8 SDK
 SQL Server (LocalDB or full instance)
-
+**
 
 All requests can then be made through the gateway at https://localhost:7186.
 
 **Project Structure**
-DairyFlow/
+**DairyFlow/
 ├── DairyFlow.ApiGateway/       # Ocelot API Gateway
 ├── DairyFlow/                  # Auth Service
 ├── DairyFlow.FarmerService/    # Farmer management
 ├── DairyFlow.CollectionService/# Milk collection & rate calculation
 ├── DairyFlow.RateService/      # Milk rate slabs & Excel export
-└── DairyFlow.BuildingBlocks/   # Shared middleware, models, exceptions
+└── DairyFlow.BuildingBlocks/   # Shared middleware, models, exceptions**
 
 Roadmap
 [ ] Angular front-end client
