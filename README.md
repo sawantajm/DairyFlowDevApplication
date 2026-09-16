@@ -39,7 +39,7 @@ Reporting: ClosedXML (Excel export)
 Database: SQL Server
 API Docs: Swagger / Swashbuckle
 
-Services 
+**Services** 
 Service	Route Prefix	
 API Gateway
 Auth Service	/api/v1/Auth	
@@ -48,12 +48,14 @@ Collection Service	/api/v1/milk-collections
 Rate Service	/api/V1/milk-rates	
 
 
-**FrontEnd**
+**FrontEnd :**
+
 **Angualar,Tyepscript**
 
 
-**Key Features**
-**User registration/login with JWT issuance and forgot/reset-password flow
+**Key Features:**
+
+User registration/login with JWT issuance and forgot/reset-password flow
 Farmer CRUD with address management and dashboard summary
 Milk collection entry with automatic rate calculation (fat/SNF based)
 Milk rate slab management with a rate matrix and Excel export
@@ -63,7 +65,7 @@ Getting Started
 Prerequisites
 .NET 8 SDK
 SQL Server (LocalDB or full instance)
-**
+
 
 All requests can then be made through the gateway at https://localhost:7186.
 
@@ -76,10 +78,6 @@ All requests can then be made through the gateway at https://localhost:7186.
 ├── DairyFlow.RateService/      # Milk rate slabs & Excel export
 └── DairyFlow.BuildingBlocks/   # Shared middleware, models, exceptions**
 
-Roadmap
-[ ] Angular front-end client
-[ ] Docker Compose for local orchestration
-[ ] Unit test coverage (xUnit)
-[ ] Centralized authentication via API Gateway (currently per-service)
+
 **Author
 Ajinath Sawant**
