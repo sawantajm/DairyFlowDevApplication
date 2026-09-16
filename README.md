@@ -1,4 +1,4 @@
-**DairyFlow**
+<img width="1408" height="768" alt="Gemini_Generated_Image_31w0ts31w0ts31w0" src="https://github.com/user-attachments/assets/79724e0a-8260-46b7-a6e6-2fa5a2e4f006" />**DairyFlow**
 A .NET 8 microservices platform for dairy milk procurement — built to model a real-world dairy collection workflow from farmer onboarding through milk collection, rate calculation, and reporting.
 
 **Overview**
@@ -11,21 +11,9 @@ Collection Service	Milk collection entries, rate calculation, daily/summary repo
 Rate Service	Milk rate slabs (fat/SNF based), rate matrix, Excel rate-chart export
 API Gateway	Single entry point routing requests to downstream services (Ocelot)
 Architecture
-   **                     ┌─────────────────┐
-                        │   API Gateway    │
-                        │    (Ocelot)      │
-                        └────────┬─────────┘
-                                 │
-        ┌────────────┬──────────┼──────────┬────────────┐
-        │             │          │          │            │
-   ┌────▼────┐  ┌─────▼────┐ ┌───▼─────┐ ┌──▼──────┐
-   │  Auth   │  │  Farmer   │ │Collection│ │  Rate   │
-   │ Service │  │  Service  │ │ Service  │ │ Service │
-   └────┬────┘  └─────┬────┘ └───┬─────┘ └──┬──────┘
-        │             │          │          │
-   ┌────▼────┐  ┌─────▼────┐ ┌───▼─────┐ ┌──▼──────┐
-   │ AuthDb  │  │ FarmerDb  │ │CollectDb│ │  RateDb │
-   └─────────┘  └───────────┘ └─────────┘ └─────────┘**
+**<img width="1408" height="768" alt="Arch digram" src="https://github.com/user-attachments/assets/540bcc85-bb95-44f5-b4d0-ca680b211e59" />**
+
+
 
 **Each service:**
 
