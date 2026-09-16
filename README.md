@@ -28,6 +28,7 @@ Documents its API with Swagger / OpenAPI
 Collection Service talks to Farmer Service and Rate Service over typed HttpClients wrapped with Polly retry/timeout policies, so a slow or unavailable downstream service degrades gracefully instead of failing the whole request.
 
 **Tech Stack**
+
 **Backend:**
 ASP.NET Core 8, C#, Entity Framework Core, Ocelot API Gateway
 Auth: JWT Bearer authentication
@@ -38,13 +39,15 @@ Reporting: ClosedXML (Excel export)
 Database: SQL Server
 API Docs: Swagger / Swashbuckle
 
-**Services **
+Services 
 Service	Route Prefix	
 API Gateway
 Auth Service	/api/v1/Auth	
 Farmer Service	/api/v1/farmers	
 Collection Service	/api/v1/milk-collections	
 Rate Service	/api/V1/milk-rates	
+
+
 **FrontEnd**
 **Angualar,Tyepscript**
 
